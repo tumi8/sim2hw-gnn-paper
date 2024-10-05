@@ -1,0 +1,25 @@
+# NNI v2.6.0
+
+experimentName: om2hvnet-hpo
+trialConcurrency: 8
+maxExperimentDuration: 5h
+
+trainingService:
+  platform: local
+  maxTrialNumberPerGpu: 4
+  useActiveGpu: true
+
+searchSpaceFile: nni-search-space-om2hvnet-hpo.json
+useAnnotation: false
+tuner:
+  name: TPE
+  classArgs:
+    optimize_mode: minimize
+
+trialCommand: >
+  python3 neural_network.py --nni --mape --regression --device cuda
+  --dataset data/input-datasets/predict-quantiles-log-normalize/training/
+  --model-output-dir data/output-models/nni
+  --epochs 100 --batch-size 2 --train-test-split 0.85
+trialCodeDirectory: ..
+trialGpuNumber: 1

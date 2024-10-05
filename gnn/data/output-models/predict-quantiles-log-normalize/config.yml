@@ -1,0 +1,38 @@
+batch_size: 2
+custom_weight_file: null
+dataset: /root/sim2hw-gnn-paper/gnn/data/input-datasets/predict-quantiles-log-normalize/training
+device: cuda
+dropout: 0.00017346535607528496
+dropout_gru: 0.22756250899600572
+epochs: 100
+f1_score: false
+git_commit: null
+gradient_clipping: .inf
+hidden_size: 32
+input_model: null
+learning_rate: 0.005405828481669532
+linear_layer_input: true
+loss_function: MSELoss
+loss_function_params:
+  reduction: mean
+  training: true
+loss_weight_gt_p99_999: 1.0e-05
+loss_weight_le_p25: 1.5
+loss_weight_le_p75: 1.0
+loss_weight_le_p95: 0.5
+loss_weight_le_p99: 0.1
+loss_weight_le_p99_9: 0.01
+loss_weight_le_p99_99: 0.001
+loss_weight_le_p99_999: 0.0001
+loss_weight_min: 2.0
+lr_scheduler_factor: 0.7
+mape: true
+model_architecture: SAGE
+model_output_dir: /root/sim2hw-gnn-paper/gnn/data/output-models/predict-quantiles-log-normalize
+nni: true
+num_layers: 1
+nunroll: 4
+regression: true
+seed: 1
+train_test_split: 0.85
+weight_decay: 0

@@ -1,0 +1,386 @@
+{
+  "server": [
+    {
+      "name": 1,
+      "type": "host",
+      "cpu": 2
+    },
+    {
+      "name": 2,
+      "type": "host",
+      "cpu": 2
+    },
+    {
+      "name": 3,
+      "type": "host",
+      "cpu": 2
+    },
+    {
+      "name": 4,
+      "type": "host",
+      "cpu": 2
+    },
+    {
+      "name": 5,
+      "type": "host",
+      "cpu": 2
+    },
+    {
+      "name": 6,
+      "type": "host",
+      "cpu": 2
+    },
+    {
+      "name": 7,
+      "type": "host",
+      "cpu": 2
+    },
+    {
+      "name": 8,
+      "type": "host",
+      "cpu": 2
+    }
+  ],
+  "link": [
+    {
+      "start": 1,
+      "stop": 5,
+      "type": "wired",
+      "rate": 950,
+      "capacity": 1000
+    },
+    {
+      "start": 1,
+      "stop": 6,
+      "type": "wired",
+      "rate": 950,
+      "capacity": 1000
+    },
+    {
+      "start": 2,
+      "stop": 4,
+      "type": "wired",
+      "rate": 950,
+      "capacity": 1000
+    },
+    {
+      "start": 3,
+      "stop": 4,
+      "type": "wired",
+      "rate": 950,
+      "capacity": 1000
+    },
+    {
+      "start": 3,
+      "stop": 5,
+      "type": "wired",
+      "rate": 950,
+      "capacity": 1000
+    },
+    {
+      "start": 3,
+      "stop": 6,
+      "type": "wired",
+      "rate": 950,
+      "capacity": 1000
+    },
+    {
+      "start": 4,
+      "stop": 7,
+      "type": "wired",
+      "rate": 950,
+      "capacity": 1000
+    },
+    {
+      "start": 5,
+      "stop": 7,
+      "type": "wired",
+      "rate": 950,
+      "capacity": 1000
+    },
+    {
+      "start": 6,
+      "stop": 7,
+      "type": "wired",
+      "rate": 950,
+      "capacity": 1000
+    },
+    {
+      "start": 7,
+      "stop": 8,
+      "type": "wired",
+      "rate": 950,
+      "capacity": 1000
+    }
+  ],
+  "flow": [
+    {
+      "name": "f0",
+      "source": 3,
+      "destination": 6,
+      "rate": 127783,
+      "burst": 672,
+      "hops": [
+        3,
+        6
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f1",
+      "source": 4,
+      "destination": 7,
+      "rate": 1000,
+      "burst": 672,
+      "hops": [
+        4,
+        7
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f2",
+      "source": 1,
+      "destination": 6,
+      "rate": 133025,
+      "burst": 672,
+      "hops": [
+        1,
+        6
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f3",
+      "source": 2,
+      "destination": 8,
+      "rate": 45185,
+      "burst": 672,
+      "hops": [
+        2,
+        4,
+        7,
+        8
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f4",
+      "source": 1,
+      "destination": 6,
+      "rate": 132504,
+      "burst": 672,
+      "hops": [
+        1,
+        6
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f5",
+      "source": 2,
+      "destination": 8,
+      "rate": 45185,
+      "burst": 672,
+      "hops": [
+        2,
+        4,
+        7,
+        8
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f6",
+      "source": 3,
+      "destination": 8,
+      "rate": 1000,
+      "burst": 672,
+      "hops": [
+        3,
+        4,
+        7,
+        8
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f7",
+      "source": 6,
+      "destination": 7,
+      "rate": 1651,
+      "burst": 672,
+      "hops": [
+        6,
+        7
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f8",
+      "source": 2,
+      "destination": 8,
+      "rate": 45185,
+      "burst": 672,
+      "hops": [
+        2,
+        4,
+        7,
+        8
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f9",
+      "source": 2,
+      "destination": 8,
+      "rate": 45185,
+      "burst": 672,
+      "hops": [
+        2,
+        4,
+        7,
+        8
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f10",
+      "source": 3,
+      "destination": 5,
+      "rate": 374924,
+      "burst": 672,
+      "hops": [
+        3,
+        5
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f11",
+      "source": 1,
+      "destination": 8,
+      "rate": 46395,
+      "burst": 672,
+      "hops": [
+        1,
+        5,
+        7,
+        8
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f12",
+      "source": 2,
+      "destination": 4,
+      "rate": 262948,
+      "burst": 672,
+      "hops": [
+        2,
+        4
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f13",
+      "source": 2,
+      "destination": 4,
+      "rate": 262948,
+      "burst": 672,
+      "hops": [
+        2,
+        4
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f14",
+      "source": 6,
+      "destination": 7,
+      "rate": 1651,
+      "burst": 672,
+      "hops": [
+        6,
+        7
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f15",
+      "source": 7,
+      "destination": 8,
+      "rate": 73249,
+      "burst": 672,
+      "hops": [
+        7,
+        8
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f16",
+      "source": 6,
+      "destination": 7,
+      "rate": 1651,
+      "burst": 672,
+      "hops": [
+        6,
+        7
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f17",
+      "source": 5,
+      "destination": 7,
+      "rate": 5581,
+      "burst": 672,
+      "hops": [
+        5,
+        7
+      ],
+      "prio": "BE"
+    },
+    {
+      "name": "f18",
+      "source": 2,
+      "destination": 8,
+      "rate": 45185,
+      "burst": 672,
+      "hops": [
+        2,
+        4,
+        7,
+        8
+      ],
+      "prio": "BE"
+    }
+  ],
+  "priority": {
+    "A": {
+      "burst": 9600,
+      "crate": 100000,
+      "prio": 1,
+      "rate": 10000
+    },
+    "B": {
+      "burst": 8400,
+      "crate": 100000,
+      "prio": 1,
+      "rate": 1000
+    },
+    "BE": {
+      "burst": 8400,
+      "crate": 100000,
+      "prio": 2,
+      "rate": 10
+    },
+    "CD": {
+      "burst": 9600,
+      "crate": 100000,
+      "prio": 0,
+      "rate": 10000
+    }
+  }
+}

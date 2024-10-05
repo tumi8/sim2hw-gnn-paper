@@ -1,0 +1,78 @@
+ntype:
+  encoding: 5
+  is_y: false
+flow_rate:
+  encoding: 0
+  is_y: false
+flow_gamma_shape:
+  encoding: 0
+  is_y: false
+flow_gamma_scale:
+  encoding: 0
+  is_y: false
+hvnet_link_rate:
+  encoding: 0
+  is_y: false
+omnet_link_rate:
+  encoding: 0
+  is_y: false
+flow_latency_omnet_mean:
+  encoding: 0
+  is_y: false
+flow_latency_omnet_min:
+  encoding: 0
+  is_y: false
+flow_latency_omnet_p25:
+  encoding: 0
+  is_y: false
+flow_latency_omnet_p50:
+  encoding: 0
+  is_y: false
+flow_latency_omnet_p75:
+  encoding: 0
+  is_y: false
+flow_latency_omnet_p95:
+  encoding: 0
+  is_y: false
+flow_latency_omnet_p99:
+  encoding: 0
+  is_y: false
+flow_latency_omnet_p99.9:
+  encoding: 0
+  is_y: false
+flow_latency_omnet_p99.99:
+  encoding: 0
+  is_y: false
+flow_latency_omnet_p99.999:
+  encoding: 0
+  is_y: false
+flow_latency_hvnet_mean:
+  encoding: 0
+  is_y: true
+flow_latency_hvnet_min:
+  encoding: 0
+  is_y: true
+flow_latency_hvnet_p25:
+  encoding: 0
+  is_y: true
+flow_latency_hvnet_p50:
+  encoding: 0
+  is_y: true
+flow_latency_hvnet_p75:
+  encoding: 0
+  is_y: true
+flow_latency_hvnet_p95:
+  encoding: 0
+  is_y: true
+flow_latency_hvnet_p99:
+  encoding: 0
+  is_y: true
+flow_latency_hvnet_p99.9:
+  encoding: 0
+  is_y: true
+flow_latency_hvnet_p99.99:
+  encoding: 0
+  is_y: true
+flow_latency_hvnet_p99.999:
+  encoding: 0
+  is_y: true

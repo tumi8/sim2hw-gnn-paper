@@ -1,0 +1,21 @@
+ntype:
+  encoding: 5
+  is_y: false
+flow_rate:
+  encoding: 0
+  is_y: false
+flow_gamma_shape_scale:
+  encoding: 2
+  is_y: false
+hvnet_link_rate:
+  encoding: 0
+  is_y: false
+omnet_link_rate:
+  encoding: 0
+  is_y: false
+flow_latency_percentiles_omnet:
+  encoding: 10
+  is_y: false
+flow_latency_percentiles_hvnet:
+  encoding: 10
+  is_y: true

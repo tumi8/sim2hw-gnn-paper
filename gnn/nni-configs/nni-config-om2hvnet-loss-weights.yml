@@ -1,0 +1,24 @@
+# NNI v2.6.0
+
+experimentName: om2hvnet-loss-weights
+trialConcurrency: 8
+maxExperimentDuration: 5h
+
+trainingService:
+  platform: local
+  maxTrialNumberPerGpu: 4
+  useActiveGpu: true
+
+searchSpaceFile: nni-search-space-om2hvnet-loss-weights.json
+useAnnotation: false
+tuner:
+  name: TPE
+  classArgs:
+    optimize_mode: minimize
+
+trialCommand: >
+  python3 neural_network.py --nni --mape --regression --device cuda
+  --dataset data/input-datasets/predict-quantiles-log-normalize/training/
+  --epochs 100 --batch-size 2 --train-test-split 0.85 --model-architecture SAGE
+trialCodeDirectory: ..
+trialGpuNumber: 1

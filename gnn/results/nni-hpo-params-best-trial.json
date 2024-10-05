@@ -1,0 +1,11 @@
+{
+    "learning_rate": 0.005405828481669532,
+    "lr_scheduler_factor": 0.7,
+    "dropout": 0.00017346535607528496,
+    "dropout_gru": 0.22756250899600572,
+    "hidden_size": 32,
+    "nunroll": 4,
+    "num_layers": 1,
+    "linear_layer_input": true,
+    "model_architecture": "SAGE"
+}

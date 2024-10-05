@@ -1,0 +1,11 @@
+{
+    "loss_weight_min":  {"_type": "loguniform", "_value": [0.0001, 10]},
+    "loss_weight_le_p25":  {"_type": "loguniform", "_value": [0.0001, 10]},
+    "loss_weight_le_p75":  {"_type": "loguniform", "_value": [0.0001, 10]},
+    "loss_weight_le_p95":  {"_type": "loguniform", "_value": [0.0001, 10]},
+    "loss_weight_le_p99":  {"_type": "loguniform", "_value": [0.0001, 10]},
+    "loss_weight_le_p99_9":  {"_type": "loguniform", "_value": [0.0001, 10]},
+    "loss_weight_le_p99_99":  {"_type": "loguniform", "_value": [0.0001, 10]},
+    "loss_weight_le_p99_999":  {"_type": "loguniform", "_value": [0.0001, 10]},
+    "loss_weight_gt_p99_999":  {"_type": "loguniform", "_value": [0.0001, 10]}
+}
